@@ -1,0 +1,70 @@
+input:focus{
+    outline: none;
+    border-bottom: 2px solid red;
+}
+
+
+
+.categories {
+    height: 65px;
+    overflow-x: auto;
+  }
+  
+  .categories::-webkit-scrollbar {
+    width: 5px;
+    height: 0px;
+  }
+  
+  .categories::-webkit-scrollbar-thumb {
+    background-color: #008FA0; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners of the thumb */
+  }
+  
+  .categories::-webkit-scrollbar-track {
+    background-color:#e7ecf6; /* Color of the scrollbar track */
+  }
+
+
+  .trips {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .trips::-webkit-scrollbar {
+    width: 5px;
+    height: 0px;
+  }
+  
+  .trips::-webkit-scrollbar-thumb {
+    background-color: #008FA0; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners of the thumb */
+  }
+  
+  .trips::-webkit-scrollbar-track {
+    background-color:#e7ecf6; /* Color of the scrollbar track */
+  }
+  
+
+  .rate:hover{
+    transform: scale(1.2);
+  }
+
+  .trips a{
+    text-decoration: none;
+  }
+
+  .category{
+    cursor: pointer;
+  }
+
+  .see{
+    cursor: pointer;
+  }
+  
+  .icon-home,.icon-location, .icon-message, .icon-event, .icon-profile{
+    background-color: #008FA0;
+    padding: 5px;
+    border-radius: 100px;
+    width: 20px;
+    height: 20px;
+  }
