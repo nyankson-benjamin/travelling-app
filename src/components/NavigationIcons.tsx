@@ -33,7 +33,7 @@ function NavigationIcons() {
 
   return (
     <div style={navigationIconsStyles()}>
-      {icons.map((icon,) => (
+      {icons.map((icon) => (
         <div key={icon.route}>
           <Link to={icon.route} >
             <div

@@ -6,7 +6,7 @@ export const registerStyle = (bgImg: string) => {
     // height: "720px",
     backgroundImage: `url(${bgImg})`,
     margin: "20px auto",
-    // border: "5px solid black",
+    border: "2px solid black",
     borderRadius: "10px",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -42,7 +42,7 @@ export const greenButtonStyle = (bgColor: string) => {
     height: "44px",
     flexShrink: 0,
     borderRadius: "20px",
-    backgroundColor: bgColor ? bgColor : "transparent",
+    backgroundColor: bgColor || "transparent",
     color: bgColor ? "#fff" : "#008FA0",
     fontFamily: "Inter",
     fontSize: "15px",
@@ -89,7 +89,7 @@ export const topTextStyle = (color: string, weight: number) => {
 
 export const navigationIconsStyles = () => {
   return {
-    width: "100%",
+    width: "390px",
     height: "61px",
     flexShrink: 0,
     borderTop: "1px solid #D9D9D9",
