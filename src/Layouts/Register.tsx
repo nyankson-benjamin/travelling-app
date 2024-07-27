@@ -5,7 +5,7 @@ type Props = {
   children: ReactNode;
   bgColor: string;
 };
-function Register(props: Props) {
+function Register(props: Readonly<Props>) {
   return (
     <div style={registerStyle(img)}>
       <div
@@ -13,6 +13,7 @@ function Register(props: Props) {
           background: props.bgColor,
           height: "94.5%",
           padding: "20px",
+          borderRadius:'10px'
         }}
       >
         {props.children}

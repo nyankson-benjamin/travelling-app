@@ -8,10 +8,9 @@ import message1 from "../assets/icons/message1.svg";
 import person from "../assets/icons/person.svg";
 import person1 from "../assets/icons/person1.svg";
 import { navigationIconsStyles } from "../styles/register";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import location1 from "../assets/icons/location3.svg";
-import { useLocation } from "react-router-dom";
 
 function NavigationIcons() {
   const icons = [
@@ -34,9 +33,9 @@ function NavigationIcons() {
 
   return (
     <div style={navigationIconsStyles()}>
-      {icons.map((icon, idx) => (
-        <div>
-          <Link to={icon.route} key={idx}>
+      {icons.map((icon) => (
+        <div key={icon.route}>
+          <Link to={icon.route} >
             <div
               style={{
                 display: "flex",

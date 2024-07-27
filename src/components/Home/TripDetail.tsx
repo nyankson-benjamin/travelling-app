@@ -24,9 +24,9 @@ function TripDetail() {
       </div>
       <div style={detailedStyle(trip?.image_url)}>
         <div style={tripImages}>
-          {results.map((img, idx) => (
-            <div key={idx} >
-              <img src={img.image_url} style={tripImages.img}/>
+          {results.map((img) => (
+            <div key={img.id} >
+              <img src={img.image_url} style={tripImages.img} alt="trip-img"/>
             </div>
           ))}
         </div>

@@ -1,12 +1,11 @@
 import NavigationIcons from "../components/NavigationIcons";
 import { registerStyle } from "../styles/register";
-// import img from "../assets/Earth.png";
 import { ReactNode } from "react";
 type Props = {
   children: ReactNode;
   bgColor: string;
 };
-function Navigations(props: Props) {
+function Navigations(props: Readonly<Props>) {
   return (
     <div style={registerStyle("")}>
       <div
